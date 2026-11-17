@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hush Privacy Policy</title>
+  <meta name="description" content="How Hush handles your journal and your Google data.">
+  <link rel="icon" href="icon.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <div class="caption"><a href="./" style="text-decoration:none">Hush</a> · Privacy policy</div>
+  <h1>Privacy policy</h1>
+  <p>Effective 17 November 2026</p>
+
+  <p class="lede">Hush is built so that nobody but you can read your journal: not Google, not the developer, not anyone with access to your Drive.</p>
+
+  <h2>What stays on your Mac</h2>
+  <ul>
+    <li>Your entries, recordings, transcripts, notes and folder names are stored on your Mac, encrypted with AES-256-GCM. The key is protected by your passphrase (PBKDF2-HMAC-SHA256, 600,000 rounds). Optional Touch ID unlock keeps a copy of that key in your Mac's keychain.</li>
+    <li>Speech is transcribed by Apple's on-device speech recognition. Audio is not sent to any server for transcription.</li>
+    <li>The camera and microphone are used only while you are recording a log.</li>
+    <li>Hush has no accounts, no analytics, no advertising and no tracking. The developer runs no servers and receives none of your data.</li>
+  </ul>
+
+  <h2>Google user data</h2>
+  <p>Google sync is optional. If you choose <strong>Sign in with Google</strong>, Hush asks for these permissions:</p>
+  <ul>
+    <li><code>openid</code> and <code>email</code>: to show which Google account is linked, in Hush's Configuration panel.</li>
+    <li><code>drive.appdata</code>: to see, create and delete Hush's own data in a hidden folder in your Google Drive. Hush cannot see, open or change any of your other Drive files.</li>
+  </ul>
+  <p><strong>How it's used.</strong> Hush uploads encrypted copies of your journal files to that hidden folder and downloads them on other Macs where you use Hush. Everything is encrypted on your Mac before upload, so Google stores only data it cannot read. Your email address is shown only in the app.</p>
+  <p><strong>How it's stored.</strong> The Google sign-in token is saved on your Mac, encrypted inside your journal. Nothing from your Google account is sent to the developer or to anyone else.</p>
+  <p><strong>Sharing.</strong> Hush does not sell, share or transfer Google user data. It is not used for advertising, and it is not used to develop, improve or train AI or machine-learning models.</p>
+  <p>Hush's use and transfer of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+
+  <h2>Removing your data</h2>
+  <ul>
+    <li><strong>Stop syncing:</strong> choose <strong>Disconnect</strong> in Hush's Configuration panel. Hush revokes its access and deletes the saved sign-in from your Mac.</li>
+    <li><strong>Delete the synced copy:</strong> in Google Drive, open Settings → Manage apps → Hush → Options → Delete hidden app data.</li>
+    <li><strong>Revoke access from Google's side:</strong> visit <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</li>
+    <li><strong>Delete the journal on a Mac:</strong> delete <code>~/Library/Application Support/Hush</code>. Without your passphrase, the files cannot be decrypted by anyone, including you.</li>
+  </ul>
+
+  <h2>Changes and contact</h2>
+  <p>If this policy changes, the new version will be posted on this page with a new effective date. Questions: <a href="https://github.com/Amanuel-1/hush-journal/issues">open an issue</a>.</p>
+
+  <footer>
+    <a href="./">Hush</a>
+    <a href="privacy.html">Privacy policy</a>
+  </footer>
+</main>
+</body>
+</html>

@@ -1,0 +1,61 @@
+:root {
+  --bg: #05090d;
+  --panel: #0b141b;
+  --line: #16303b;
+  --text: #e6f3f7;
+  --text2: #9fb6bf;
+  --text3: #5f7882;
+  --cyan: #3fd9ef;
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+
+html { background: var(--bg); }
+
+body {
+  margin: 0;
+  background:
+    radial-gradient(1200px 500px at 50% -200px, rgba(63, 217, 239, 0.10), transparent 70%),
+    var(--bg);
+  color: var(--text);
+  font: 17px/1.65 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+main { max-width: 720px; margin: 0 auto; padding: 72px 20px 56px; }
+
+.caption {
+  font: 600 12px/1.4 ui-monospace, "SF Mono", Menlo, monospace;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--cyan);
+}
+
+header.hero { display: flex; gap: 24px; align-items: center; margin-bottom: 40px; }
+header.hero img { width: 96px; height: 96px; flex: none; }
+h1 { font-size: 44px; line-height: 1.1; margin: 6px 0 0; letter-spacing: -0.01em; }
+h2 { font-size: 22px; margin: 44px 0 10px; }
+p, li { color: var(--text2); }
+strong { color: var(--text); font-weight: 600; }
+a { color: var(--cyan); text-underline-offset: 3px; }
+code { font: 14px ui-monospace, "SF Mono", Menlo, monospace; color: var(--text); background: var(--panel); padding: 1px 6px; border-radius: 4px; }
+
+.lede { font-size: 20px; color: var(--text); margin: 0 0 8px; }
+
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 14px; margin: 28px 0; }
+.card { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 18px 18px 6px; }
+.card h3 { margin: 6px 0 4px; font-size: 17px; }
+.card p { margin: 0 0 12px; font-size: 15px; }
+
+ul { padding-left: 20px; }
+li { margin: 6px 0; }
+
+footer { margin-top: 64px; padding-top: 20px; border-top: 1px solid var(--line); color: var(--text3); font-size: 14px; display: flex; flex-wrap: wrap; gap: 8px 20px; }
+footer a { color: var(--text2); }
+
+@media (max-width: 520px) {
+  main { padding-top: 48px; }
+  header.hero { flex-direction: column; align-items: flex-start; gap: 16px; }
+  h1 { font-size: 36px; }
+}

@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hush: a private journal for the Mac</title>
+  <meta name="description" content="Hush is a private macOS journal for text, voice and video. Everything is encrypted on your Mac before it is stored or synced.">
+  <link rel="icon" href="icon.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <header class="hero">
+    <img src="icon.png" alt="Hush app icon">
+    <div>
+      <div class="caption">Private log system · macOS</div>
+      <h1>Hush</h1>
+    </div>
+  </header>
+
+  <p class="lede">A private journal for text, voice and video. Everything is encrypted on your Mac before it's stored or synced.</p>
+  <p>Write an entry, talk through your day, or record a video log with a heads-up display drawn over it. Hush transcribes what you say as you say it, on your Mac, and keeps it all behind a passphrase only you know.</p>
+
+  <div class="grid">
+    <div class="card">
+      <div class="caption">Encrypted</div>
+      <h3>Locked with your passphrase</h3>
+      <p>AES-256-GCM for every entry, recording and transcript. Unlock with your passphrase or Touch ID.</p>
+    </div>
+    <div class="card">
+      <div class="caption">On-device</div>
+      <h3>Live transcription</h3>
+      <p>Speech is turned into text by Apple's on-device recogniser. Audio never leaves the Mac to be transcribed.</p>
+    </div>
+    <div class="card">
+      <div class="caption">Optional sync</div>
+      <h3>Google Drive, ciphertext only</h3>
+      <p>Sign in with Google to keep an encrypted copy in a hidden app folder. Google can't read it.</p>
+    </div>
+  </div>
+
+  <h2>How sync works</h2>
+  <p>Sync is optional. If you turn it on, Hush asks Google for one Drive permission, <code>drive.appdata</code>: a hidden folder that only Hush can use. Hush can't see any of your other Drive files, and Google stores only encrypted data it can't open. Details are in the <a href="privacy.html">privacy policy</a>.</p>
+
+  <h2>Requirements</h2>
+  <p>macOS 15 or later, on Apple silicon or Intel.</p>
+
+  <footer>
+    <span>Hush</span>
+    <a href="privacy.html">Privacy policy</a>
+    <a href="https://github.com/Amanuel-1/hush-journal/issues">Contact</a>
+  </footer>
+</main>
+</body>
+</html>
